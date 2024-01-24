@@ -422,7 +422,9 @@ margin-bottom: 80px;
   line-height: 133%;
 }
 .advantages .container .details .box p {
-
+  color: #667085;
+  line-height: 140%;
+  margin-top: 10px;
 }
 .advantages .container .details img {
   max-width: 450px;
