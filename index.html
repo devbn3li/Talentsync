@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet" />
+
   <title>Talentsync</title>
 </head>
 
@@ -224,17 +225,51 @@
         </div>
       </div>
       <div class="img-group">
-        <div class="image_1">
-          <!-- <img src="./images/image@2x.png" alt=""> -->
+        <div class="up">
+          <img class="img_1" src="./images/Image_2.png" alt="">
+          <img class="img_2" src="./images/Image.png" alt="">
         </div>
-        <div class="image_2"></div>
-        <div class="image_3"></div>
-        <div class="image_4"></div>
-        <div class="image_5"></div>
+        <div class="down">
+          <img class="img_4" src="./images/Image_3.png" alt="">
+          <img class="img_4" src="./images/Image_4.png" alt="">
+          <img class="img_5" src="./images/Image_5.png" alt="">
+        </div>
       </div>
     </div>
   </section>
   <!-- end testimonial -->
+  <!-- start FAQ -->
+  <section class="faqs">
+    <div class="container">
+      <div class="faq">
+        <span>Support</span>
+        <h2>FAQs</h2>
+        <p>
+          Everything you need to know about the product and billing. 
+          Can’t find the answer you’re looking for? 
+          Please <u>chat to our friendly team</u>.
+        </p>
+      </div>
+      <div class="qoustions">
+        <div class="box active" onclick="toggleAnswer(1)">
+          <div class="text">
+            <h4>How many participants can join a ClearLink video conference?</h4>
+            <p id="plus_1" class="">
+              ClearLink offers flexible meeting options. 
+              Depending on your subscription plan, 
+              you can host meetings with varying numbers of participants. 
+              Our plans are designed to accommodate small team 
+              collaborations and large-scale webinars, 
+              ensuring you have the right fit for your needs.
+            </p>
+          </div>
+          <img src="./images/minuscircle.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end FAQ -->
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
