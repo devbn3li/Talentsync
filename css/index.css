@@ -557,34 +557,37 @@ ul {
   text-decoration: default;
 }
 .faqs .qoustions {
-  max-width: 600px;
+  min-width: 480px;
+  max-width: 620px;
 }
-.faqs .qoustions .rm-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 24px;
-  gap: 25px;
-  transition: 0.5s;
-  cursor: pointer;
-  border-bottom: 1px solid #EAECF0;
+
+.faqs .qoustions .rm-box:last-child {
+  border-bottom: none;
 }
 .faqs .qoustions .box {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 24px;
+  padding: 20px;
   gap: 25px;
-  width: 600px;
   border-radius: 12px;
   border: 1px solid #EAECF0;
   background-color: #F9FAFB;
-  transition: 0.5s;
   cursor: pointer;
 }
-.faqs .plus {
+.faqs .qoustions .rm-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 25px;
+  cursor: pointer;
+  border-bottom: 1px solid #EAECF0;
+}
+.faqs .box .text > p {
   display: none;
   margin-top: 10px;
+  width: 90%;
 }
 .faqs .qoustions .box h3 {
   color: #101828;
