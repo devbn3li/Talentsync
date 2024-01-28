@@ -1,22 +1,14 @@
-function toggleAnswer(id) {
-  let answer = document.getElementById("plus_" + id);
-  let box = document.getElementById("box" + id);
-  const list = box.classList;
-  let image = document.getElementById("image" + id);
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-  if (answer.style.display === "none") {
-    answer.style.display = "block";
-  } else if (answer.style.display === "block"){
-    answer.style.display = "none";
-  }
-  if (list.contains("box")) {
-    box.classList.remove("box");
-    box.classList.add("rm-box");
-    image.src = "./images/pluscircle.svg";
-  } else if (list.contains("rm-box")) {
-    box.classList.remove("rm-box");
-    box.classList.add("box");
-    image.src = "./images/minuscircle.svg";
-  }
-
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
 }

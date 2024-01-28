@@ -560,37 +560,38 @@ ul {
   min-width: 480px;
   max-width: 620px;
 }
-
-.faqs .qoustions .rm-box:last-child {
-  border-bottom: none;
-}
 .faqs .qoustions .box {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px;
-  gap: 25px;
-  border-radius: 12px;
-  border: 1px solid #EAECF0;
+  margin-bottom: 20px;
+}
+.collapsible {
+  background-color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: #98A2B3;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  color: #475467;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
   background-color: #F9FAFB;
-  cursor: pointer;
-}
-.faqs .qoustions .rm-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px;
-  gap: 25px;
-  cursor: pointer;
-  border-bottom: 1px solid #EAECF0;
-}
-.faqs .box .text > p {
-  display: none;
-  margin-top: 10px;
-  width: 90%;
-}
-.faqs .qoustions .box h3 {
-  color: #101828;
-  font-weight: 600;
 }
 /* end faq */
