@@ -561,12 +561,14 @@ ul {
   max-width: 620px;
 }
 .faqs .qoustions .box {
-  margin-bottom: 20px;
+  padding: 18px;
+  border-radius: 16px;
+  border: 1px solid #EAECF0;
+  border-bottom: 1px solid #EAECF0;
 }
-.collapsible {
+.faqs .collapsible {
   background-color: white;
   cursor: pointer;
-  padding: 18px;
   width: 100%;
   border: none;
   text-align: left;
@@ -574,21 +576,28 @@ ul {
   font-size: 15px;
 }
 
-.collapsible:after {
+.faqs .collapsible:after {
+  font-size: 18px;
   content: '\002B';
   color: #98A2B3;
   font-weight: bold;
   float: right;
   margin-left: 5px;
+  border: 3px solid;
+  width: 20px;
+  text-align: center;
+  line-height: 1.111;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
 }
 
-.active:after {
+.faqs .active:after {
   content: "\2212";
 }
 
-.content {
+.faqs .content {
   color: #475467;
-  padding: 0 18px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
